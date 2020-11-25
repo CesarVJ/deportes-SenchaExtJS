@@ -15,8 +15,8 @@ var navega = '<nav>'+
 				'<a href="#" class="menu_inhab" id="mnuPanelAdmin">Panel Administraci&oacute;n</a>' +
 				'<a href="ctrlPhp/ctrlLogout.php" class="menu_inhab" id="mnuSalir">Cerrar Sesi&oacute;n</a>'+
 				'</nav>';
-var centro='<main>'+
-					'<section id="sct1" style="display:flex; align-items:center; justify-content:center; flex-direction:column;">'+
+var centro='<main style="overflow-y:auto;">'+
+					'<section id="sct1" style="display:flex; align-items:center; justify-content:center; flex-direction:column; overflow-y:auto;">'+
 					'</section>'+
 				'</main>';
 var pie = '<footer>'+
