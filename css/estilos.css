@@ -91,7 +91,6 @@ footer > address{
 
 }
 
-
 .vueltas{
     animation-name: vueltas;
     animation-duration: 2s;
@@ -102,6 +101,16 @@ footer > address{
 @keyframes vueltas {
     0% { transform: rotate3d(1, 0.6, 0.6, 0deg); }
     100% { transform: rotate3d(0.7, 0.8, 0.8, 360deg); }
+}
+
+.articulos{
+	padding: 0;
+}
+.imagen-articulo{
+	max-width: 5rem;
+}
+.nombre-articulo{
+	font-size: 1rem;
 }
 
 
