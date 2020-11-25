@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a.menu{
+	display: block;
+}
+
+:root{
+	--color-principal: #eeeeee;
+	--color-secundario: #686d76;
+	--color3: #373a40;
+	--color4: #C1E0E9;
+	}
+
+a.menu_inhab{
+	display: none;
+}
+
+body{
+	font-family: Verdana, Helvetica, Arial, "Times New Roman";
+	color: #003153;
+	margin-block-start: 0.1em;
+	margin-block-end: 0.1em;
+	margin-inline-start: 0.3em;
+	margin-inline-end: 0.2em;
+}
+
+header {
+	background-color: var(--color3);
+    color: #fff;
+    align-items: center;
+    padding: 0px 7%;
+}
+
+header figure{
+    margin-right: 4rem;
+}
+
+nav {
+    background-color: var(--color-secundario);
+    align-items: center;
+    padding: 0px 0%;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-principal);
+    padding: 1rem 2rem;
+	vertical-align: center;
+	text-align: center;
+}
+
+nav a:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-color: var(--color4);
+}
+
+
+
+main {
+    background-color: #D2E6F6;
+	padding: 3% 7%;
+	height: 100%;
+}
+section{
+	text-align: justify;
+}
+time{
+	text-align: right;
+	float: right;
+	font-size: smaller;
+}
+aside.local{
+	text-align: right;
+}
+footer{
+    background-color: var(--color3);
+    color: #fff;
+    text-align: center;
+	font-weight: bold;
+	height: 100%;
+	padding: 1.2rem;
+}
+
+footer > address{
+    vertical-align: 50%;
+
+}
+
+
+.vueltas{
+    animation-name: vueltas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes vueltas {
+    0% { transform: rotate3d(1, 0.6, 0.6, 0deg); }
+    100% { transform: rotate3d(0.7, 0.8, 0.8, 360deg); }
+}
+
+
+
+
+
+/* Para ajuste responsivo*/ 
+@media screen and (max-width: 500px){
+	header {
+		height: auto;
+	}
+	header.main{
+		height: auto;
+	}
+	nav {
+		float: none;
+		width: auto;
+		height: auto;
+	}
+	main {
+		float: none;
+		width: auto;
+	}
+
+}
