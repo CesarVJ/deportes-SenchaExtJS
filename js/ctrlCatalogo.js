@@ -188,8 +188,11 @@ var nLinActual = -1;
 		]
 	});
 
-
-
+	let columnaPrecio= Ext.ComponentQuery.query('grid[id=tablaArt]')[0].getColumns()[3];
+	var sTipoFirmado = sessionStorage.getItem('tipo');
+	if (sTipoFirmado === null || sTipoFirmado === ''){
+		columnaPrecio.hide();
+	}
 
 
 });
